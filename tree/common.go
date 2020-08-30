@@ -23,3 +23,8 @@ func AbsInt(x int) int {
 	}
 	return x
 }
+
+type Node struct {
+	Val      int
+	Children []*Node
+}
