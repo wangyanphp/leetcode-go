@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // 关键是对于stack[1...N], minStack[top]维持的是1...N的最小值
 type MinStack struct {
 	stack    []int
@@ -63,18 +61,6 @@ func (this *MinStack) GetMin() int {
 	}
 
 	return this.minStack[len(this.minStack)-1]
-
-}
-
-func main() {
-	obj := Constructor()
-	obj.Push(-2)
-	obj.Push(0)
-	obj.Push(-3)
-	obj.Pop()
-	param_3 := obj.Top()
-	param_4 := obj.GetMin()
-	fmt.Println(param_3, param_4)
 
 }
 
